@@ -19,13 +19,14 @@ import AdditionalDocuments5_2 from "./Pages/AdditionalDocuments5_2.jsx";
 import AdditionalDocumention5_3 from "./Pages/AdditionalDocumention5_3.jsx";
 import Review6 from "./Pages/Review6.jsx";
 import RequestPreview6_1 from "./Pages/RequestPreview6_1.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="bg-white">
       {/* <HomeLayout /> */}
       {/* <Home /> */}
-      <Page00 />
+      {/* <Page00 /> */}
       {/* <RequestStarted01 /> */}
       {/* <OverView /> */}
       {/* <RequestStarted1 /> */}
@@ -44,6 +45,17 @@ function App() {
       {/* <AdditionalDocumention5_3 /> */}
       {/* <Review6 /> */}
       {/* <RequestPreview6_1 /> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/page0" element={<Page00 />} />
+          <Route path="/request-started-01" element={<RequestStarted01 />} />
+          <Route path="/overview" element={<OverView />} />
+          <Route path="/request-started-1" element={<RequestStarted1 />} />
+          <Route path="/request-started-1-1" element={<RequestStarted1_1 />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import { line } from "../assets/Images";
+import { card1, card2, card3, card4, card5, line } from "../assets/Images";
 
 function RequestPreview6_1() {
   return (
-    <div className="bg-white min-h-[100vh] flex flex-col justify-around h-auto">
+    <div className="bg-white min-h-[100vh] flex flex-col justify-between gap-8 h-auto items-center ">
       <div className="bg-[#F3F5FF] h-[98px] w-full flex justify-end items-center">
         <div className="flex justify-around w-[70%]">
           <p className="text-[#19193D] font-normal text-[22px] ">
@@ -20,6 +20,14 @@ function RequestPreview6_1() {
           Patient & Provider Information
         </p>
         <img src={line} alt="" className="w-[916px] h-[2PX] " />
+      </div>
+
+      <div className="flex flex-wrap gap-3 items-center w-[90%] mx-auto justify-start ">
+        <img src={card1} alt="" className="w-[270px] h-[324px] " />
+        <img src={card2} alt="" className="w-[270px] h-[324px] " />
+        <img src={card3} alt="" className="w-[270px] h-[324px] " />
+        <img src={card4} alt="" className="w-[270px] h-[324px] " />
+        <img src={card5} alt="" className="w-[270px] h-[324px] " />
       </div>
     </div>
   );

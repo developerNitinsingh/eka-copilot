@@ -27,6 +27,11 @@ import rx from "../../../public/Image/rx.png";
 import upload from "../../../public/Image/upload.png";
 import word from "../../../public/Image/word.png";
 import line from "../../../public/Image/Line.png";
+import card1 from "../../../public/Image/card1.png";
+import card2 from "../../../public/Image/card2.png";
+import card3 from "../../../public/Image/card3.png";
+import card4 from "../../../public/Image/card4.png";
+import card5 from "../../../public/Image/card5.png";
 
 export {
   logo,
@@ -58,4 +63,9 @@ export {
   upload,
   word,
   line,
+  card1,
+  card2,
+  card3,
+  card4,
+  card5,
 };
