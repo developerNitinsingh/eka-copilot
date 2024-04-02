@@ -48,8 +48,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/page0" element={<Page00 />} />
+          <Route path="/page0" element={<Home />} />
+          <Route path="/" element={<Page00 />} />
           <Route path="/request-started-01" element={<RequestStarted01 />} />
           <Route path="/overview" element={<OverView />} />
           <Route path="/request-started-1" element={<RequestStarted1 />} />
