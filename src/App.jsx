@@ -25,7 +25,7 @@ function App() {
     <div className="bg-white">
       {/* <HomeLayout /> */}
       {/* <Home /> */}
-      {/* <Page00 /> */}
+      <Page00 />
       {/* <RequestStarted01 /> */}
       {/* <OverView /> */}
       {/* <RequestStarted1 /> */}
@@ -43,7 +43,7 @@ function App() {
       {/* <AdditionalDocuments5_2 /> */}
       {/* <AdditionalDocumention5_3 /> */}
       {/* <Review6 /> */}
-      <RequestPreview6_1 />
+      {/* <RequestPreview6_1 /> */}
     </div>
   );
 }
