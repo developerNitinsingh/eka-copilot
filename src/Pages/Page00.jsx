@@ -1,13 +1,16 @@
 import React from "react";
 import HomeLayout from "../Layouts/HomeLayout";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
+import { Link } from "react-router-dom";
 
 function Page00() {
   return (
     <HomeLayout>
       <main className="min-h-[80vh] my-5 shadow-2xl h-auto w-full flex justify-center items-center flex-col py-5 gap-2 ">
         <div className="flex flex-col items-center">
-          <img src={chatIcon} alt="" className="w-[55px] h-[54px]  " />
+          <Link to={"/request-started-01"}>
+            <img src={chatIcon} alt="" className="w-[55px] h-[54px]  " />
+          </Link>
           <p className="text-2xl font-normal text-[#000000] w-[380px] text-center">
             Welcome to Prior Auth Assistant! How can I assist you today?
           </p>
