@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: auto;
+    max-width: 1440px;
+    position: relative;
+}
+
+
+.shadow-inner {
+    box-shadow: -6px 0px 15px rgba(25, 25, 61, 0.08) inset;
+}
+
+.outer-shadow {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
