@@ -18,7 +18,7 @@ function Home() {
     // </HomeLayout>
 
     <HomeLayout>
-      <main className="min-h-[80vh]  shadow-2xl h-auto w-full flex justify-center items-center flex-col my-10 gap-2  ">
+      <main className="min-h-[110vh] my-5 shadow-2xl h-auto w-full flex justify-center items-center flex-col py-5 gap-2  ">
         <div className="flex flex-col items-center">
           <img src={chatIcon} alt="" className="w-[55px] h-[54px]  " />
           <p className="text-2xl font-normal text-[#000000] w-[380px] text-center">

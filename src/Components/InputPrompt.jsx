@@ -1,5 +1,6 @@
 import React from "react";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
+import { Link } from "react-router-dom";
 
 function InputPrompt({ className }) {
   return (
@@ -21,6 +22,7 @@ function InputPrompt({ className }) {
         >
           <img src={media} alt="" className="w-[11px] h-[22px]" />
         </label>
+        <Link to={"/additionalDocumention5-3"}></Link>
         <button className="bg-[#889CE7] rounded-md w-[35px] h-[35px] flex justify-center items-center shadow-md ">
           <img src={send} alt="" className="w-[17px] h-[17px]" />
         </button>

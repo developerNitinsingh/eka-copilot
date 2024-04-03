@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   closeCollapse,
   collapse,
@@ -9,17 +10,23 @@ import {
   namedLogo,
   profilePic,
 } from "../assets/Images";
+import DashboardExpension from "../Components/DashboardExpenstion/DashboardExpension";
 
 function HomeLayout({ children }) {
   const [isToggled, setIsToggled] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
     setIsToggled((isToggled) => !isToggled);
   }
+
+  function handleOpen() {
+    setIsOpen((isOpen) => !isOpen);
+  }
   return (
-    <div className="min-h-[80vh] flex  gap-3 h-auto relative ">
+    <div className="min-h-[90vh] flex  gap-3 h-auto relative homelayout ">
       {!isToggled && (
-        <div className={`w-fit   `}>
+        <div className={`w-fit ml-3  bg-[#FFFFFF] h-auto `}>
           <img src={logo} alt="" className="w-[93px] h-[95px]" />
 
           <div
@@ -32,6 +39,11 @@ function HomeLayout({ children }) {
               <div className="bg-white  shadow-lg p-2 rounded">
                 <img src={history} alt="" className=" h-[24px] w-[24px]" />
               </div>
+              {isOpen && (
+                <div className={` absolute top-3 left-24 overflow-hidden `}>
+                  <DashboardExpension />
+                </div>
+              )}
             </div>
             <div className="flex gap-2 flex-col">
               <div
@@ -40,7 +52,10 @@ function HomeLayout({ children }) {
               >
                 <img src={collapse} alt="" className=" h-[24px] w-[24px]" />
               </div>
-              <div className="bg-white  shadow-lg p-2 rounded">
+              <div
+                className="bg-white  shadow-lg p-2 rounded"
+                onClick={handleOpen}
+              >
                 <img src={dashboard} alt="" className=" h-[24px] w-[24px] " />
               </div>
             </div>
@@ -59,41 +74,59 @@ function HomeLayout({ children }) {
               onClick={handleClick}
             />
           </div>
-          <div className="flex flex-col   h-[90%] items-center justify-around p-2 ">
+          <div className="flex flex-col   h-[90%] items-center justify-between p-2 pb-10 ">
             {/* 1st div */}
 
             {/* // */}
-            <div className="flex flex-col gap-7">
+            <div className="flex flex-col gap-7 items-center ">
               <button className="flex gap-1 items-center text-lg font-medium bg-[#19193D] px-5 text-center rounded h-12 w-60 ">
                 {" "}
                 <img src={doc} alt="" className="w-[17px] h-[20px]" />{" "}
                 Collabration Hub{" "}
               </button>
-              <div className="flex flex-col gap-2">
-                <h4 className="text-[#19193D] text-lg font-medium ml-5">
-                  Thread History
-                </h4>
-                <p className="text-[#FD6262] font-normal text-base ml-5">
-                  Yesterday
-                </p>
-                <ul className="list-disc ml-14 flex flex-col gap-2">
-                  <li className="text-[#19193D]">Start new request</li>
-                  <li className="text-[#19193D]">Edit request</li>
-                  <li className="text-[#19193D]">Status of request 0123...</li>
-                </ul>
 
-                <p className="text-[#FD6262] font-normal text-base ml-5">
-                  Yesterday
-                </p>
-                <ul className="list-disc ml-14 flex flex-col gap-2">
-                  <li className="text-[#19193D]">Letter of acceptance</li>
-                  <li className="text-[#19193D]">Start new request</li>
-                  <li className="text-[#19193D]">Delete request</li>
-                </ul>
-              </div>
+              {!isOpen && (
+                <div className="flex flex-col gap-2">
+                  <h4 className="text-[#19193D] text-lg font-medium ml-5">
+                    Thread History
+                  </h4>
+                  <p className="text-[#FD6262] font-normal text-base ml-5">
+                    Yesterday
+                  </p>
+                  <ul className="list-disc ml-14 flex flex-col gap-2">
+                    <li className="text-[#19193D]">Start new request</li>
+                    <li className="text-[#19193D]">Edit request</li>
+                    <li className="text-[#19193D]">
+                      Status of request 0123...
+                    </li>
+                  </ul>
+
+                  <p className="text-[#FD6262] font-normal text-base ml-5">
+                    Yesterday
+                  </p>
+                  <ul className="list-disc ml-14 flex flex-col gap-2">
+                    <li className="text-[#19193D]">Letter of acceptance</li>
+                    <li className="text-[#19193D]">Start new request</li>
+                    <li className="text-[#19193D]">Delete request</li>
+                  </ul>
+                </div>
+              )}
+
+              {isOpen && (
+                <div
+                  className={` absolute ${
+                    isOpen ? "inline-block" : "hidden"
+                  } top-3 left-2 overflow-hidden `}
+                >
+                  <DashboardExpension />
+                </div>
+              )}
             </div>
 
-            <button className="flex gap-1 items-center text-lg font-medium bg-[#19193D] px-5 text-center rounded h-12 w-60 justify-center ">
+            <button
+              className="flex gap-1 items-center text-lg font-medium bg-[#19193D] px-5 text-center rounded h-12 w-60 justify-center "
+              onClick={handleOpen}
+            >
               {" "}
               <img src={dashboard} alt="" className="w-[17px] h-[20px]" />{" "}
               Dashboard{" "}
@@ -102,7 +135,7 @@ function HomeLayout({ children }) {
         </div>
       )}
 
-      <div className=" w-full m-5">
+      <div className=" w-full m-5 ">
         <div className="flex justify-between w-full ">
           <h1 className="font-medium text-4xl text-[#19193D]  ">EKA Copilot</h1>
           <img src={profilePic} alt="" className="w-[46px] h-[46px]" />
