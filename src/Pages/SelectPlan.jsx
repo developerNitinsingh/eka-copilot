@@ -1,10 +1,12 @@
 import React from "react";
 import HomeLayout from "../Layouts/HomeLayout";
+import { Link } from "react-router-dom";
 import {
   cardGroup,
   leftArrow,
   optionThreeDot,
   rightArrow,
+  rightBigArrow,
 } from "../assets/Images";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
 import InputPrompt from "../Components/InputPrompt";
@@ -33,11 +35,11 @@ function SelectPlan() {
             </div>
           </div>
 
-          <div className=" flex flex-col gap-4 ">
+          <div className=" flex flex-col gap-4 items-end ">
             <p className="text-left">Please select plan :</p>
 
-            <div className="flex gap-4">
-              <div className="bg-[#889CE7] inline-block w-fit p-1 px-2 rounded ">
+            <div className="flex gap-4 ">
+              <div className="hover:bg-[#889CE7] bg-[#889ce70d] inline-block w-fit p-1 px-2 rounded ">
                 <p className="flex flex-col text-[#19193D]">
                   <span className="font-light text-sm">Plan</span>
                   <span className="font-normal text-sm"> True Blue Pro 01</span>
@@ -79,7 +81,7 @@ function SelectPlan() {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#889CE7] inline-block w-fit p-1 px-2 rounded ">
+              <div className="hover:bg-[#889CE7] bg-[#889ce70d] inline-block w-fit p-1 px-2 rounded ">
                 <p className="flex flex-col text-[#19193D]">
                   <span className="font-light text-sm">Plan</span>
                   <span className="font-normal text-sm"> True Blue Pro 01</span>
@@ -121,7 +123,7 @@ function SelectPlan() {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#889CE7] inline-block w-fit p-1 px-2 rounded ">
+              <div className="hover:bg-[#889CE7] bg-[#889ce70d] inline-block w-fit p-1 px-2 rounded ">
                 <p className="flex flex-col text-[#19193D]">
                   <span className="font-light text-sm">Plan</span>
                   <span className="font-normal text-sm"> True Blue Pro 01</span>
@@ -164,6 +166,11 @@ function SelectPlan() {
                 </div>
               </div>
             </div>
+            <Link to={"/intake-details-2"}>
+              <button className="w-[51px] h-[37px] bg-[#98ADFB] flex justify-center items-center rounded mr-8 hover:bg-[#19193D] transition-all duration-300 ">
+                <img src={rightBigArrow} alt="" className="w-[16px] h-[12px]" />
+              </button>
+            </Link>
           </div>
         </div>
 

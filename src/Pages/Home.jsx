@@ -2,6 +2,7 @@ import React from "react";
 import HomeLayout from "../Layouts/HomeLayout";
 import { chatIcon, chatLogo, logo, media, send } from "../assets/Images";
 import InputPrompt from "../Components/InputPrompt";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -25,10 +26,11 @@ function Home() {
             Welcome to Prior Auth Assistant! How can I assist you today?
           </p>
         </div>
-
-        <div className="w-[900px]">
-          <InputPrompt />
-        </div>
+        <Link to={"/provider-details-3-1"}>
+          <div className="w-[900px]">
+            <InputPrompt />
+          </div>
+        </Link>
       </main>
     </HomeLayout>
   );

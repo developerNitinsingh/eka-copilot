@@ -1,6 +1,7 @@
 import React from "react";
 import HomeLayout from "../Layouts/HomeLayout";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
+import { Link } from "react-router-dom";
 
 function RequestStarted01() {
   return (
@@ -22,12 +23,16 @@ function RequestStarted01() {
             Would you like to create a new Prior Authorization request?
           </p>
           <div className=" flex justify-center items-center gap-7">
-            <button className="bg-[#008905] rounded shadow-md w-[95px] h-[37px] text-[#FFFFFF]">
-              Yes
-            </button>
-            <button className="bg-[#FD6262] rounded shadow-md w-[95px] h-[37px] text-[#FFFFFF]">
-              No
-            </button>
+            <Link to={"/select-plan"}>
+              <button className="bg-[#008905] rounded shadow-md w-[95px] h-[37px] text-[#FFFFFF] hover:bg-[#19193D] transition-all duration-300">
+                Yes
+              </button>
+            </Link>
+            <Link to={""}>
+              <button className="bg-[#FD6262] rounded shadow-md w-[95px] h-[37px] text-[#FFFFFF] hover:bg-[#19193D] transition-all duration-300">
+                No
+              </button>
+            </Link>
           </div>
         </div>
 

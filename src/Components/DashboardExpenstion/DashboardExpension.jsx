@@ -7,10 +7,10 @@ function DashboardExpension() {
     <div className="min-w-[243px] min-h-[574px] bg-[#19193D] flex justify-center items-center mx-auto rounded dashboard  ">
       <div className="w-[198px] h-[528px] flex flex-col justify-between  ">
         <div className="border-b pb-4 border-b-[#ffffff73] ">
-          <Link to={"/page"}>
-            <div className=" text-[#FFFFFF] font-light text-base w-[198px] h-[42px]  border border-[#98ADFB] bg-[#ffffff24] text-center flex justify-center items-center">
+          <Link to={"/additionalDocumention5-3"}>
+            <button className=" text-[#FFFFFF] font-light text-base w-[198px] h-[42px]  border border-[#98ADFB] bg-[#ffffff24] text-center flex justify-center items-center">
               Overview
-            </div>
+            </button>
           </Link>
         </div>
         <div className="flex flex-col gap-4">
@@ -56,7 +56,7 @@ function DashboardExpension() {
               </span>
             </div>
           </Link>
-          <Link to={""}>
+          <Link to={"/"}>
             <div className=" w-[198px] h-[42px]  border border-[#98ADFB] bg-[#ffffff24] text-center flex justify-center items-center">
               <span className="text-[#FFFFFF] font-light text-base">
                 Letters/Notes

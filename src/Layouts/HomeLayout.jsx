@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineUser, AiOutlineProfile } from "react-icons/ai";
 import {
   closeCollapse,
   collapse,
@@ -8,6 +9,7 @@ import {
   history,
   logo,
   namedLogo,
+  openCollapse,
   profilePic,
 } from "../assets/Images";
 import DashboardExpension from "../Components/DashboardExpenstion/DashboardExpension";
@@ -50,7 +52,7 @@ function HomeLayout({ children }) {
                 className="bg-white  shadow-lg p-2 rounded"
                 onClick={handleClick}
               >
-                <img src={collapse} alt="" className=" h-[24px] w-[24px]" />
+                <img src={openCollapse} alt="" className=" h-[24px] w-[24px]" />
               </div>
               <div
                 className="bg-white  shadow-lg p-2 rounded"
@@ -62,7 +64,6 @@ function HomeLayout({ children }) {
           </div>
         </div>
       )}
-
       {isToggled && (
         <div className="w-fit bg-[#FFFFFF] shadow-inner h-auto ">
           <div className="flex justify-between items-center gap-3 m-5 ">
@@ -79,10 +80,10 @@ function HomeLayout({ children }) {
 
             {/* // */}
             <div className="flex flex-col gap-7 items-center ">
-              <button className="flex gap-1 items-center text-lg font-medium bg-[#19193D] px-5 text-center rounded h-12 w-60 ">
+              <button className="flex gap-1 items-center text-lg font-medium bg-[#19193D] px-5 text-center rounded h-12 w-60 text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#19193D] hover:shadow-md">
                 {" "}
-                <img src={doc} alt="" className="w-[17px] h-[20px]" />{" "}
-                Collabration Hub{" "}
+                <AiOutlineUser className="" />
+                <span className=" text-lg font-medium">Collabration Hub </span>
               </button>
 
               {!isOpen && (
@@ -124,17 +125,29 @@ function HomeLayout({ children }) {
             </div>
 
             <button
-              className="flex gap-1 items-center text-lg font-medium bg-[#19193D] px-5 text-center rounded h-12 w-60 justify-center "
+              className="flex gap-2 items-center text-lg font-medium bg-[#19193D] px-5 text-center rounded h-12 w-60 justify-center text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#19193D] hover:shadow-md "
               onClick={handleOpen}
             >
               {" "}
-              <img src={dashboard} alt="" className="w-[17px] h-[20px]" />{" "}
-              Dashboard{" "}
+              {/* <img src={dashboard} alt="" className="w-[17px] h-[20px]" />{" "} */}
+              <AiOutlineProfile
+                className="w-[17px] h-[20px]  font-medium"
+                size={"50"}
+              />
+              <span className=" text-lg font-medium"> Dashboard</span>
             </button>
           </div>
         </div>
       )}
-
+      {/* {isOpen && (
+        <div
+          className={` absolute top-3 left-24 overflow-hidden ${
+            isOpen ? "inline-block" : "hidden"
+          } `}
+        >
+          <DashboardExpension />
+        </div>
+      )} */}
       <div className=" w-full m-5 ">
         <div className="flex justify-between w-full ">
           <h1 className="font-medium text-4xl text-[#19193D]  ">EKA Copilot</h1>

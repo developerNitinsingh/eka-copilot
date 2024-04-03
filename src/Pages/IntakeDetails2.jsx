@@ -1,4 +1,5 @@
 import HomeLayout from "../Layouts/HomeLayout";
+import { Link } from "react-router-dom";
 import {
   cardGroup,
   leftArrow,
@@ -95,13 +96,11 @@ function IntakeDetails2() {
               <option value="audi">Audi</option>
             </select>
           </div>
-          <button className="w-[51px] h-[37px] bg-[#98ADFB] flex justify-center items-center rounded">
-            <img
-              src={rightBigArrow}
-              alt=""
-              className="w-[16px] h-[12px] hover:bg-[#19193D] transition-all duration-300"
-            />
-          </button>
+          <Link to={"/provider-details-3"}>
+            <button className="w-[51px] h-[37px] bg-[#98ADFB] flex justify-center items-center rounded hover:bg-[#19193D] transition-all duration-300">
+              <img src={rightBigArrow} alt="" className="w-[16px] h-[12px] " />
+            </button>
+          </Link>
         </div>
 
         <div className="w-[900px]">

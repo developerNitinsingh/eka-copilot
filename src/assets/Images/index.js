@@ -32,6 +32,10 @@ import card2 from "../../../public/Image/card2.png";
 import card3 from "../../../public/Image/card3.png";
 import card4 from "../../../public/Image/card4.png";
 import card5 from "../../../public/Image/card5.png";
+import approved from "../../../public/Image/approved.png";
+import denid from "../../../public/Image/denid.png";
+import pdf from "../../../public/Image/pdf.png";
+import openCollapse from "../../../public/Image/openCollapse.png";
 
 export {
   logo,
@@ -68,4 +72,8 @@ export {
   card3,
   card4,
   card5,
+  approved,
+  denid,
+  pdf,
+  openCollapse,
 };
