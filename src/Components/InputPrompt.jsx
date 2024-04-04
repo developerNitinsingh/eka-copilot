@@ -22,10 +22,11 @@ function InputPrompt({ className }) {
         >
           <img src={media} alt="" className="w-[11px] h-[22px]" />
         </label>
-
-        <button className="bg-[#889CE7] rounded-md w-[35px] h-[35px] flex justify-center items-center shadow-md hover:bg-[#bbc3e0] ">
-          <img src={send} alt="" className="w-[17px] h-[17px]" />
-        </button>
+        <Link to={"/request-started-01"}>
+          <button className="bg-[#889CE7] rounded-md w-[35px] h-[35px] flex justify-center items-center shadow-md hover:bg-[#bbc3e0] ">
+            <img src={send} alt="" className="w-[17px] h-[17px]" />
+          </button>
+        </Link>
 
         <input type="file" name="" id="files" className="hidden" />
       </div>

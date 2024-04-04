@@ -40,20 +40,32 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[352px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
+                  <option value="D123 - Lymphoma">D123 - Lymphoma</option>
+                  <option value="D652 - Lorem ipsom xyz">
+                    D652 - Lorem ipsom xyz
+                  </option>
+                  <option value="D852 - Abc xyz chroni">
+                    D852 - Abc xyz chronic
+                  </option>
+                  <option value="D789 - Arthritis">D789 - Arthritis</option>
+                  <option value="D999 - Benign tumor">
+                    D999 - Benign tumor
+                  </option>
                 </select>
                 <select
                   name="cars"
                   id="cars"
                   className="w-[540px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
+                  <option value="P951 - Chemotherapy">
+                    P951 - Chemotherapy
+                  </option>
+                  <option value="P741 - Radiation therapy (radiotherapy)">
+                    P741 - Radiation therapy (radiotherapy)
+                  </option>
+                  <option value="P753 - Monoclonal antibodies">
+                    P753 - Monoclonal antibodies
+                  </option>
                 </select>
               </div>
             </div>
@@ -65,20 +77,32 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[352px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
+                  <option value="D123 - Lymphoma">D123 - Lymphoma</option>
+                  <option value="D652 - Lorem ipsom xyz">
+                    D652 - Lorem ipsom xyz
+                  </option>
+                  <option value="D852 - Abc xyz chroni">
+                    D852 - Abc xyz chronic
+                  </option>
+                  <option value="D789 - Arthritis">D789 - Arthritis</option>
+                  <option value="D999 - Benign tumor">
+                    D999 - Benign tumor
+                  </option>
                 </select>
                 <select
                   name="cars"
                   id="cars"
                   className="w-[540px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
+                  <option value="P951 - Chemotherapy">
+                    P951 - Chemotherapy
+                  </option>
+                  <option value="P741 - Radiation therapy (radiotherapy)">
+                    P741 - Radiation therapy (radiotherapy)
+                  </option>
+                  <option value="P753 - Monoclonal antibodies">
+                    P753 - Monoclonal antibodies
+                  </option>
                 </select>
               </div>
             </div>
@@ -90,20 +114,32 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[352px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
+                  <option value="D123 - Lymphoma">D123 - Lymphoma</option>
+                  <option value="D652 - Lorem ipsom xyz">
+                    D652 - Lorem ipsom xyz
+                  </option>
+                  <option value="D852 - Abc xyz chroni">
+                    D852 - Abc xyz chronic
+                  </option>
+                  <option value="D789 - Arthritis">D789 - Arthritis</option>
+                  <option value="D999 - Benign tumor">
+                    D999 - Benign tumor
+                  </option>
                 </select>
                 <select
                   name="cars"
                   id="cars"
                   className="w-[540px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
+                  <option value="P951 - Chemotherapy">
+                    P951 - Chemotherapy
+                  </option>
+                  <option value="P741 - Radiation therapy (radiotherapy)">
+                    P741 - Radiation therapy (radiotherapy)
+                  </option>
+                  <option value="P753 - Monoclonal antibodies">
+                    P753 - Monoclonal antibodies
+                  </option>
                 </select>
               </div>
             </div>

@@ -28,7 +28,7 @@ function RequestStarted01() {
                 Yes
               </button>
             </Link>
-            <Link to={""}>
+            <Link to={"/"}>
               <button className="bg-[#FD6262] rounded shadow-md w-[95px] h-[37px] text-[#FFFFFF] hover:bg-[#19193D] transition-all duration-300">
                 No
               </button>

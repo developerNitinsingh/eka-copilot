@@ -26,7 +26,7 @@ function HomeLayout({ children }) {
     setIsOpen((isOpen) => !isOpen);
   }
   return (
-    <div className="min-h-[90vh] flex  gap-3 h-auto relative homelayout ">
+    <div className="max-h-screen flex  gap-3  relative homelayout ">
       {!isToggled && (
         <div className={`w-fit ml-3  bg-[#FFFFFF] h-auto `}>
           <img src={logo} alt="" className="w-[93px] h-[95px]" />
