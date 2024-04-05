@@ -8,8 +8,8 @@ import {
   send,
   table,
 } from "../assets/Images";
-import { optionThreeDot } from "../assets/Images";
-import InputPrompt from "../Components/InputPrompt";
+import { optionThreeDot, chatLogo, media } from "../assets/Images";
+import { Link } from "react-router-dom";
 
 function EditProviderDetails3_2() {
   return (
@@ -85,36 +85,61 @@ function EditProviderDetails3_2() {
                 <input
                   type="text"
                   className="bg-transparent"
-                  placeholder="Full Name"
+                  placeholder="NPI"
                 />
                 <input
                   type="text"
                   className="bg-transparent text-right"
-                  placeholder="XYZ Hospital"
+                  placeholder="987654"
                 />
               </div>
               <div className="w-[601px] h-[43px] bg-white flex justify-between px-2 rounded border border-[#AEAEAE]">
                 <input
                   type="text"
                   className="bg-transparent"
-                  placeholder="Full Name"
+                  placeholder="Address"
                 />
                 <input
                   type="text"
                   className="bg-transparent text-right"
-                  placeholder="XYZ Hospital"
+                  placeholder="Block D, st #1236, NY, USA"
                 />
               </div>
             </div>
-
-            <button className="w-[51px] h-[37px] bg-[#98ADFB] flex justify-center items-center rounded mr-8 hover:bg-[#19193D] transition-all duration-300 ">
-              <img src={rightBigArrow} alt="" className="w-[16px] h-[12px]" />
-            </button>
+            <Link to={"/diagnosisProcedure-4"}>
+              <button className="w-[51px] h-[37px] bg-[#98ADFB] flex justify-center items-center rounded mr-8 hover:bg-[#19193D] transition-all duration-300 ">
+                <img src={rightBigArrow} alt="" className="w-[16px] h-[12px]" />
+              </button>
+            </Link>
           </div>
         </div>
 
-        <div className="w-[895px]">
-          <InputPrompt className={" "} />
+        <div
+          className={`flex w-[895px] justify-between items-center border border-[#AEAEAE] h-[54px] rounded-lg px-2 mt-9  shadow-md`}
+        >
+          <div className="flex items-center gap-2">
+            <img src={chatLogo} alt="" className="w-[43px] h-[35px] " />
+            <input
+              type="text"
+              className="w-[310px] h-[21px] bg-white text-[#AEAEAE] border-none outline-none"
+              placeholder="Let Eka Co-pilot help you... Ask anything"
+            />
+          </div>
+          <div className="flex gap-2">
+            <label
+              className="bg-[#FFFFFF] rounded-md w-[35px] h-[35px] flex justify-center items-center shadow-md"
+              htmlFor="files"
+            >
+              <img src={media} alt="" className="w-[11px] h-[22px]" />
+            </label>
+            <Link to={"/diagnosisProcedure-4"}>
+              <button className="bg-[#889CE7] rounded-md w-[35px] h-[35px] flex justify-center items-center shadow-md hover:bg-[#bbc3e0] ">
+                <img src={send} alt="" className="w-[17px] h-[17px]" />
+              </button>
+            </Link>
+
+            <input type="file" name="" id="files" className="hidden" />
+          </div>
         </div>
       </div>
     </HomeLayout>

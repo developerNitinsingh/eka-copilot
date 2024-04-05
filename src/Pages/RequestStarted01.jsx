@@ -68,7 +68,7 @@ function RequestStarted01() {
           )}
 
           {loading && (
-            <div className="flex  items-center justify-center  w-[900px] px-2 gap-3 shadow-md rounded h-[70px]">
+            <div className="flex  items-center justify-center  w-[900px] px-2 gap-3  rounded h-[70px]">
               <span className="loading loading-ring loading-xs"></span>
               <span className="loading loading-ring loading-sm"></span>
               <span className="loading loading-ring loading-md"></span>
