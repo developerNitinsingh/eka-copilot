@@ -15,11 +15,12 @@ import {
 } from "../assets/Images";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
 import InputPrompt from "../Components/InputPrompt";
+import { Link } from "react-router-dom";
 
 function Review6() {
   return (
     <HomeLayout>
-      <div className="min-h-[100vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between">
+      <div className="min-h-[82vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between">
         <div className="flex flex-col items-center gap-5">
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[88px] justify-between">
             <div className="flex gap-3 items-center">
@@ -42,15 +43,23 @@ function Review6() {
           </div>
 
           <div className="flex  gap-5  mt-6">
-            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-              Accept Alternative
-            </button>
-            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-              Keep Original
-            </button>
-            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-              Consult
-            </button>
+            <Link to={"/requestApproved"}>
+              <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+                Submit For Review
+              </button>
+            </Link>
+
+            <Link to={"/RequestPreview6"}>
+              <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+                Preview
+              </button>
+            </Link>
+
+            <Link to={"/additionalDocuments5-2"}>
+              <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+                Back
+              </button>
+            </Link>
           </div>
 
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[79px] justify-between">

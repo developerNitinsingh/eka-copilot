@@ -15,11 +15,23 @@ import {
 } from "../assets/Images";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
 import InputPrompt from "../Components/InputPrompt";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function AdditionalDocuments5_2() {
+  const [file, setFile] = useState("");
+
+  const handleFileChange = (event) => {
+    let input = event.target.files[0];
+    if (!input) return;
+    let data = new FormData();
+    data.append("fileToUpload", input);
+    setFile(data);
+  };
+  console.log(file);
   return (
     <HomeLayout>
-      <div className="min-h-[100vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between">
+      <div className="min-h-[82vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between">
         <div className=" flex flex-col gap-5">
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[88px] justify-between">
             <div className="flex gap-3 items-center">
@@ -43,7 +55,10 @@ function AdditionalDocuments5_2() {
             </div>
           </div>
 
-          <div className=" flex w-[147px] h-[40px] rounded border border-[#19193D] justify-center items-center ">
+          <div
+            className=" flex w-[147px] h-[40px] rounded border border-[#19193D] justify-center items-center "
+            // onClick={handleClick}
+          >
             <label
               htmlFor="file"
               className="cursor-pointer flex gap-2 items-center  rounded "
@@ -51,11 +66,22 @@ function AdditionalDocuments5_2() {
               <img src={upload} alt="" className="w-[14px] h-[17px]" />
               <p className="text-[#19193D] font-normal text-lg">Add details</p>
             </label>
-            <input type="file" name="" id="file" className="hidden" />
+            <input
+              type="file"
+              name=""
+              id="file"
+              className="hidden"
+              // value={isOpen}
+              onChange={handleFileChange}
+            />
           </div>
 
-          <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[132px] justify-between">
-            <div className="flex gap-3 items-center">
+          <div
+            className={`flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[132px] justify-between ${
+              file ? "flex" : "hidden"
+            }`}
+          >
+            <div className={`flex gap-3 items-center`}>
               <img src={profilePic} alt="" className="w-[54px] h-[54px]  " />
               <div className="flex items-center gap-4">
                 <div className="w-[118px] h-[85px] bg-[#98adfb17] flex justify-center items-center">
@@ -71,7 +97,11 @@ function AdditionalDocuments5_2() {
             </div>
           </div>
 
-          <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[90px] justify-between bg-gradient-to-l from-[#a59cdc33] to-[#5b4bbb33] ">
+          <div
+            className={`flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[90px] justify-between bg-gradient-to-l from-[#a59cdc33] to-[#5b4bbb33] ${
+              file ? "flex" : "hidden"
+            }`}
+          >
             <div className="flex gap-3 items-center">
               <img src={chatIcon} alt="" className="w-[54px] h-[54px]  " />
               <p className=" text-[#a59cdc]   flex gap-2 font-semibold text-lg">
@@ -87,15 +117,23 @@ function AdditionalDocuments5_2() {
           </div>
         </div>
         <div className="flex  gap-5  mt-6">
-          <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-            Accept Alternative
-          </button>
-          <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-            Keep Original
-          </button>
-          <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-            Consult
-          </button>
+          <Link to={"/additionalDocumention5-3"}>
+            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+              Upload More
+            </button>
+          </Link>
+
+          <Link to={"/Review-6"}>
+            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+              Proceed to Review
+            </button>
+          </Link>
+
+          <Link to={""}>
+            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+              Consult
+            </button>
+          </Link>
         </div>
         <div className="w-[900px]">
           <InputPrompt />

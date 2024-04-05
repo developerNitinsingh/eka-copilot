@@ -1,17 +1,20 @@
 import React from "react";
 import { card1, card2, card3, card4, card5, line } from "../assets/Images";
+import { Link } from "react-router-dom";
 
 function RequestPreview6_1() {
   return (
-    <div className="bg-white min-h-[100vh] flex flex-col justify-between gap-8 h-auto items-center ">
+    <div className="bg-white min-h-[90vh] flex flex-col justify-between gap-8 h-auto items-center ">
       <div className="bg-[#F3F5FF] h-[98px] w-full flex justify-end items-center">
         <div className="flex justify-around w-[70%]">
           <p className="text-[#19193D] font-normal text-[22px] ">
             Auth Number: cc23685147
           </p>
-          <button className="text-lg font-normal text-center w-[169px] h-[38px]  text-[#19193D] border border-[#19193D] rounded ">
-            Close Request
-          </button>
+          <Link to={"/Review-6"}>
+            <button className="text-lg font-normal text-center w-[169px] h-[38px]  text-[#19193D] border border-[#19193D] rounded ">
+              Close Request
+            </button>
+          </Link>
         </div>
       </div>
 

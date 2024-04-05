@@ -48,7 +48,7 @@ function App() {
         <Route path="/procedure-5" element={<Procedure5 />} />
         <Route path="/rx5-1" element={<Rx5_1 />} />
         <Route
-          path="/additionalDocuments5-2 "
+          path="/additionalDocuments5-2"
           element={<AdditionalDocuments5_2 />}
         />
         <Route
