@@ -11,6 +11,7 @@ import {
 } from "../assets/Images";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
 import InputPrompt from "../Components/InputPrompt";
+import { Link } from "react-router-dom";
 
 function Procedure5() {
   return (
@@ -122,15 +123,23 @@ function Procedure5() {
             </div>
           </div>
           <div className="flex  gap-5 ">
-            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-              Accept Alternative
-            </button>
-            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-              Keep Original
-            </button>
-            <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-              Consult
-            </button>
+            <Link to={"/additionalDocuments5-2"}>
+              <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+                Accept Alternative
+              </button>
+            </Link>
+
+            <Link to={"/Review-6"}>
+              <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+                Keep Original
+              </button>
+            </Link>
+
+            <Link to={"/additionalDocuments5-2"}>
+              <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
+                Consult
+              </button>
+            </Link>
           </div>
         </div>
 
