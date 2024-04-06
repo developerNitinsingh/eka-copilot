@@ -29,7 +29,7 @@ function SelectPlan() {
   }
   return (
     <HomeLayout>
-      <div className="min-h-[100vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between">
+      <div className="min-h-[80vh] my-5 shadow-2xl max-h-screen w-full flex  items-center flex-col py-5 gap-1 justify-between">
         <div className="flex flex-col gap-4 items-center">
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[88px] justify-between">
             <div className="flex gap-3 items-center">
@@ -50,10 +50,10 @@ function SelectPlan() {
             </div>
           </div>
 
-          <div className=" flex flex-col gap-4 items-end ">
-            <p className="text-left">Please select plan :</p>
+          <div className=" flex flex-col gap-4 items-end relative ">
+            <p className="absolute left-0 mb-10">Please select plan :</p>
 
-            <div className="flex gap-4 ">
+            <div className="flex gap-4 mt-8 ">
               <div className="hover:bg-[#889CE7] bg-[#889ce70d] inline-block w-fit p-1 px-2 rounded ">
                 <p className="flex flex-col text-[#19193D]">
                   <span className="font-light text-sm">Plan</span>

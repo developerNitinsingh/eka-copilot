@@ -26,13 +26,13 @@ function HomeLayout({ children }) {
     setIsOpen((isOpen) => !isOpen);
   }
   return (
-    <div className="min-h-screen flex  gap-3 h-auto  relative homelayout overflow-hidden ">
+    <div className="min-h-[80vh] flex  gap-3 h-auto  relative homelayout overflow-hidden ">
       {!isToggled && (
         <div className={`w-fit ml-3  bg-[#FFFFFF] h-auto `}>
           <img src={logo} alt="" className="w-[93px] h-[95px]" />
 
           <div
-            className={`h-[100vh]  w-full p-4 text-center  flex flex-col justify-between items-center relative  rounded-xl  outer-shadow `}
+            className={`h-[95vh]  w-full p-4 text-center  flex flex-col justify-between items-center relative  rounded-xl  outer-shadow `}
           >
             <div className=" flex gap-2 flex-col   ">
               <div className="bg-white  shadow-lg p-2 rounded">
@@ -75,7 +75,7 @@ function HomeLayout({ children }) {
               onClick={handleClick}
             />
           </div>
-          <div className="flex flex-col   h-[90%] items-center justify-between p-2 pb-10 ">
+          <div className="flex flex-col   min-h-[70%] items-center justify-around p-2 pb-10 ">
             {/* 1st div */}
 
             {/* // */}

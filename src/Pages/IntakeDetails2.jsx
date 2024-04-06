@@ -13,7 +13,7 @@ import InputPrompt from "../Components/InputPrompt";
 function IntakeDetails2() {
   return (
     <HomeLayout>
-      <div className="min-h-[100vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between ">
+      <div className="min-h-[80vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between ">
         <div className="flex flex-col gap-4 items-end">
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[70px] justify-between">
             <div className="flex gap-3 items-center">
@@ -35,96 +35,36 @@ function IntakeDetails2() {
           </div>
 
           <div className="bg-[#F9F9F9] grid grid-cols-2 gap-3 w-[900px] h-[270px] py-4 justify-items-center px-2">
-            <select
-              name="cars"
-              id="cars"
+            <input
+              type="text"
               className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-            >
-              <option value="D123 - Lymphoma">D123 - Lymphoma</option>
-              <option value="D652 - Lorem ipsom xyz">
-                D652 - Lorem ipsom xyz
-              </option>
-              <option value="D852 - Abc xyz chroni">
-                D852 - Abc xyz chronic
-              </option>
-              <option value="D789 - Arthritis">D789 - Arthritis</option>
-              <option value="D999 - Benign tumor">D999 - Benign tumor</option>
-            </select>
-            <select
-              name="cars"
-              id="cars"
+              placeholder="D123 - Lymphoma"
+            />
+            <input
+              type="text"
               className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-            >
-              <option value="D123 - Lymphoma">D123 - Lymphoma</option>
-              <option value="D652 - Lorem ipsom xyz">
-                D652 - Lorem ipsom xyz
-              </option>
-              <option value="D852 - Abc xyz chroni">
-                D852 - Abc xyz chronic
-              </option>
-              <option value="D789 - Arthritis">D789 - Arthritis</option>
-              <option value="D999 - Benign tumor">D999 - Benign tumor</option>
-            </select>
-            <select
-              name="cars"
-              id="cars"
+              placeholder="D123 - Lymphoma"
+            />
+            <input
+              type="text"
               className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-            >
-              <option value="D123 - Lymphoma">D123 - Lymphoma</option>
-              <option value="D652 - Lorem ipsom xyz">
-                D652 - Lorem ipsom xyz
-              </option>
-              <option value="D852 - Abc xyz chroni">
-                D852 - Abc xyz chronic
-              </option>
-              <option value="D789 - Arthritis">D789 - Arthritis</option>
-              <option value="D999 - Benign tumor">D999 - Benign tumor</option>
-            </select>
-            <select
-              name="cars"
-              id="cars"
+              placeholder="D123 - Lymphoma"
+            />
+            <input
+              type="text"
               className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-            >
-              <option value="D123 - Lymphoma">D123 - Lymphoma</option>
-              <option value="D652 - Lorem ipsom xyz">
-                D652 - Lorem ipsom xyz
-              </option>
-              <option value="D852 - Abc xyz chroni">
-                D852 - Abc xyz chronic
-              </option>
-              <option value="D789 - Arthritis">D789 - Arthritis</option>
-              <option value="D999 - Benign tumor">D999 - Benign tumor</option>
-            </select>
-            <select
-              name="cars"
-              id="cars"
+              placeholder="D123 - Lymphoma"
+            />
+            <input
+              type="text"
               className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-            >
-              <option value="D123 - Lymphoma">D123 - Lymphoma</option>
-              <option value="D652 - Lorem ipsom xyz">
-                D652 - Lorem ipsom xyz
-              </option>
-              <option value="D852 - Abc xyz chroni">
-                D852 - Abc xyz chronic
-              </option>
-              <option value="D789 - Arthritis">D789 - Arthritis</option>
-              <option value="D999 - Benign tumor">D999 - Benign tumor</option>
-            </select>
-            <select
-              name="cars"
-              id="cars"
+              placeholder="D123 - Lymphoma"
+            />
+            <input
+              type="text"
               className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-            >
-              <option value="D123 - Lymphoma">D123 - Lymphoma</option>
-              <option value="D652 - Lorem ipsom xyz">
-                D652 - Lorem ipsom xyz
-              </option>
-              <option value="D852 - Abc xyz chroni">
-                D852 - Abc xyz chronic
-              </option>
-              <option value="D789 - Arthritis">D789 - Arthritis</option>
-              <option value="D999 - Benign tumor">D999 - Benign tumor</option>
-            </select>
+              placeholder="D123 - Lymphoma"
+            />
           </div>
           <Link to={"/provider-details-3"}>
             <button className="w-[51px] h-[37px] bg-[#98ADFB] flex justify-center items-center rounded hover:bg-[#19193D] transition-all duration-300">

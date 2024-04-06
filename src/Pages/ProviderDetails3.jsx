@@ -27,16 +27,13 @@ function ProviderDetails3() {
   }
   return (
     <HomeLayout>
-      <div className="min-h-[100vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between ">
+      <div className="min-h-[80vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between ">
         <div className="flex flex-col gap-4 items-end">
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[70px] justify-between">
             <div className="flex gap-3 items-center">
               <img src={chatIcon} alt="" className="w-[54px] h-[54px]  " />
               <p className=" text-[#19193D]  text-center flex gap-2 font-normal text-lg">
                 How about adding
-                <span className="text-[#19193D] font-normal">
-                  True Blue Pro 01
-                </span>{" "}
                 <span className="text-[#98ADFB] font-bold text-lg">
                   Provider Details now!
                 </span>
@@ -53,10 +50,9 @@ function ProviderDetails3() {
               id="Provider Type"
               className="w-[300px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
             >
-              <option value="volvo">Provider Type</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
+              <option value="saab">Servicing Physician</option>
+              <option value="mercedes">Attending Physician</option>
+              <option value="audi">Primary Care Physician</option>
             </select>
             <div className="w-[600px] h-[43px] border border-[#AEAEAE] flex items-center justify-between px-2 rounded">
               <input

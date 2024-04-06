@@ -12,11 +12,12 @@ import {
 } from "../assets/Images";
 import { chatIcon, chatLogo, logo, media, send, table } from "../assets/Images";
 import InputPrompt from "../Components/InputPrompt";
+import { Link } from "react-router-dom";
 
 function Rx5_1() {
   return (
     <HomeLayout>
-      <div className="min-h-[100vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between">
+      <div className="min-h-[80vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between">
         <div className="flex flex-col items-center gap-7 ">
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[70px] justify-between bg-gradient-to-l from-[#a59cdc33] to-[#5b4bbb33] ">
             <div className="flex gap-3 items-center">
@@ -34,10 +35,12 @@ function Rx5_1() {
 
           <div className="relative w-full flex justify-center">
             <div className=" flex gap-3 items-center">
-              <span className="text-[#FD6262] text-lg font-medium">
-                Procedure
-              </span>
-              <span className="text-[#AEAEAE] text-lg font-normal">Rx</span>
+              <Link to={"/procedure-5"}>
+                <span className="text-[#AEAEAE] text-lg font-medium">
+                  Procedure
+                </span>
+              </Link>
+              <span className="text-[#FD6262] text-lg font-normal">Rx</span>
             </div>
 
             <div className=" absolute right-0 bg-[#FD6262] w-[36px] h-[32px] flex justify-center items-center rounded top-4">

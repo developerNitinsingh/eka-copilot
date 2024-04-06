@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function DiagnosisProcedure4() {
   return (
     <HomeLayout>
-      <div className="min-h-[90vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between ">
+      <div className="min-h-[80vh] my-5 shadow-2xl h-auto w-full flex  items-center flex-col py-5 gap-2 justify-between ">
         <div className="flex flex-col gap-4 items-end">
           <div className="flex  items-center border border-[#AEAEAE] w-[900px] px-2 gap-3 shadow-md rounded h-[70px] justify-between">
             <div className="flex gap-3 items-center">
@@ -33,7 +33,9 @@ function DiagnosisProcedure4() {
 
           <div className=" mx-auto flex gap-3 flex-col">
             <div className="bg-[#F9F9F9] w-[900px] h-[134px] rounded-lg p-3 flex flex-col gap-6">
-              <p className="text-[#19193D] font-normal text-xl ">Primary</p>
+              <p className="text-[#19193D] font-normal text-xl ">
+                Primary <span className="text-red-500">*</span>
+              </p>
               <div className="flex gap-2">
                 <select
                   name="cars"
@@ -70,7 +72,7 @@ function DiagnosisProcedure4() {
               </div>
             </div>
             <div className="bg-[#F9F9F9] w-[900px] h-[134px] rounded-lg p-3 flex flex-col gap-6">
-              <p className="text-[#19193D] font-normal text-xl ">Secondary*</p>
+              <p className="text-[#19193D] font-normal text-xl ">Secondary</p>
               <div className="flex gap-2">
                 <select
                   name="cars"
@@ -107,7 +109,7 @@ function DiagnosisProcedure4() {
               </div>
             </div>
             <div className="bg-[#F9F9F9] w-[900px] h-[134px] rounded-lg p-3 flex flex-col gap-6">
-              <p className="text-[#19193D] font-normal text-xl ">Secondary*</p>
+              <p className="text-[#19193D] font-normal text-xl ">Secondary</p>
               <div className="flex gap-2">
                 <select
                   name="cars"
