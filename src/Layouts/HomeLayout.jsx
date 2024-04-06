@@ -75,7 +75,7 @@ function HomeLayout({ children }) {
               onClick={handleClick}
             />
           </div>
-          <div className="flex flex-col   min-h-[70%] items-center justify-around p-2 pb-10 ">
+          <div className="flex flex-col   min-h-[90%] items-center justify-around p-2 pb-10 ">
             {/* 1st div */}
 
             {/* // */}
