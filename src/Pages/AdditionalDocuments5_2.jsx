@@ -125,7 +125,7 @@ function AdditionalDocuments5_2() {
 
           <Link to={"/Review-6"}>
             <button className="w-[171px] h-[37px] bg-[#98ADFB] text-[#FFFFFF] hover:bg-[#19193D] rounded">
-              Proceed to Review
+              Save
             </button>
           </Link>
 
