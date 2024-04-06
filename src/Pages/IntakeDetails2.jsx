@@ -37,33 +37,33 @@ function IntakeDetails2() {
           <div className="bg-[#F9F9F9] grid grid-cols-2 gap-3 w-[900px] h-[270px] py-4 justify-items-center px-2">
             <input
               type="text"
-              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-              placeholder="D123 - Lymphoma"
+              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF] pl-2"
+              placeholder="Requestor Type"
             />
             <input
               type="text"
-              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-              placeholder="D123 - Lymphoma"
+              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF] pl-2 "
+              placeholder="Type of Care"
             />
             <input
               type="text"
-              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-              placeholder="D123 - Lymphoma"
+              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF] pl-2"
+              placeholder="Intake Type"
             />
             <input
               type="text"
-              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-              placeholder="D123 - Lymphoma"
+              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF] pl-2"
+              placeholder="Priority"
             />
             <input
               type="text"
-              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-              placeholder="D123 - Lymphoma"
+              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF] pl-2"
+              placeholder="Service Start Date/Date of Admission"
             />
             <input
               type="text"
-              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
-              placeholder="D123 - Lymphoma"
+              className="w-[434px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF] pl-2"
+              placeholder="Service End Date/Date of discharge"
             />
           </div>
           <Link to={"/provider-details-3"}>

@@ -50,6 +50,9 @@ function ProviderDetails3() {
               id="Provider Type"
               className="w-[300px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
             >
+              <option value="1" selected disabled hidden>
+                Provider Type
+              </option>
               <option value="saab">Servicing Physician</option>
               <option value="mercedes">Attending Physician</option>
               <option value="audi">Primary Care Physician</option>

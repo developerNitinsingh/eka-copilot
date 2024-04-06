@@ -42,6 +42,9 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[352px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
+                  <option value="" hidden selected disabled>
+                    Select Diagnoses
+                  </option>
                   <option value="D123 - Lymphoma">D123 - Lymphoma</option>
                   <option value="D652 - Lorem ipsom xyz">
                     D652 - Lorem ipsom xyz
@@ -59,6 +62,9 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[540px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
+                  <option value="" hidden selected disabled>
+                    Select procedure
+                  </option>
                   <option value="P951 - Chemotherapy">
                     P951 - Chemotherapy
                   </option>
@@ -79,6 +85,9 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[352px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
+                  <option value="" hidden selected disabled>
+                    Select Diagnoses
+                  </option>
                   <option value="D123 - Lymphoma">D123 - Lymphoma</option>
                   <option value="D652 - Lorem ipsom xyz">
                     D652 - Lorem ipsom xyz
@@ -96,6 +105,9 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[540px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
+                  <option value="" hidden selected disabled>
+                    Select procedure
+                  </option>
                   <option value="P951 - Chemotherapy">
                     P951 - Chemotherapy
                   </option>
@@ -116,6 +128,9 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[352px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
+                  <option value="" hidden selected disabled>
+                    Select Diagnoses
+                  </option>
                   <option value="D123 - Lymphoma">D123 - Lymphoma</option>
                   <option value="D652 - Lorem ipsom xyz">
                     D652 - Lorem ipsom xyz
@@ -133,6 +148,9 @@ function DiagnosisProcedure4() {
                   id="cars"
                   className="w-[540px] h-[43px] rounded border border-[#AEAEAE] bg-[#FFFFFF]"
                 >
+                  <option value="" hidden selected disabled>
+                    Select procedure
+                  </option>
                   <option value="P951 - Chemotherapy">
                     P951 - Chemotherapy
                   </option>
